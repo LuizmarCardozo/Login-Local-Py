@@ -1,0 +1,15 @@
+{
+  "Luizmar": "3083",
+  "LUIZ": {
+    "salt": "c2363e965c4f44ebb1219466a6468b16",
+    "password": "20230fdf5a6fd84bb15dbea128327a840c91cb6453041b30d1eb4266cf4ae403"
+  },
+  "lmr": {
+    "salt": "ebb8fb522c12473793cb92677756b6ac",
+    "password": "483ad232f7ac8cc268e15b5d3e2939f84209514984b088483fe49f6de2fba36b"
+  },
+  "luizmar": {
+    "salt": "b18cbd2e26b34ce49968130d22aff19b",
+    "password": "6e539a34243b43ac8db9586718d96ae23f7fe6c5aac3d6bb3d144d9238a9a744"
+  }
+}
