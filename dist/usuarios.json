@@ -1,0 +1,14 @@
+{
+  "luiz3083": {
+    "salt": "4950fe5cc4ce4cecba41edf49e826a06",
+    "password": "2b0735d8de87799482ed3374c7af9ef1f99115b78162571c3b683b17a517d6cf"
+  },
+  "luizmar3083": {
+    "salt": "b504a9628a9f43b29ac56e9727198c54",
+    "password": "512eb2a1d7bc69ea926ae5386bcde6af7585afa80d20c2deb3121bf3f0377bf3"
+  },
+  "luiz": {
+    "salt": "1b146c4ae6e148fab431649665f003a7",
+    "password": "3d62bfe5107dc07d04d9656ea0ffc821da2e936459c18047e4f9a3050acf281e"
+  }
+}

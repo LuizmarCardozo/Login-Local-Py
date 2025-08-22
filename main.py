@@ -397,15 +397,19 @@ class App(tk.Tk):
     # --------------- Execução do próximo script ---------------
     def _run_next_script(self, usuario: str):
         """Abre NEXT_SCRIPT em outro processo e fecha esta janela."""
-        script = NEXT_SCRIPT
-        if not os.path.exists(script):
-            Toast(self, f"Script não encontrado: {script}", bg=FG_ERROR)
-            return
+        # Procura o executável calc.exe na pasta do main.exe
+        exe_path = os.path.join(os.path.dirname(sys.executable if getattr(sys, 'frozen', False) else __file__), 'calc.exe')
+        script_path = os.path.join(os.path.dirname(__file__), NEXT_SCRIPT)
         try:
-            # Passa o usuário como argumento (ex.: --user joao)
-            subprocess.Popen([sys.executable, script, "--user", usuario])
-            # Fecha a janela atual após iniciar o outro script
-            self.destroy()
+            if os.path.exists(exe_path):
+                # Executa calc.exe de forma oculta
+                subprocess.Popen([exe_path, '--user', usuario], creationflags=subprocess.CREATE_NO_WINDOW)
+                self.destroy()
+            elif os.path.exists(script_path):
+                subprocess.Popen([sys.executable, script_path, '--user', usuario], creationflags=subprocess.CREATE_NO_WINDOW)
+                self.destroy()
+            else:
+                Toast(self, f"Script ou executável não encontrado.", bg=FG_ERROR)
         except Exception as e:
             Toast(self, f"Erro ao abrir: {e}", bg=FG_ERROR)
 

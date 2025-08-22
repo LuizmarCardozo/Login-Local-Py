@@ -184,6 +184,11 @@ class CalculadoraGUI:
         self.history.delete(0, tk.END)
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--user', type=str, default=None)
+    args, unknown = parser.parse_known_args()
+
     root = tk.Tk()
     app = CalculadoraGUI(root)
 
