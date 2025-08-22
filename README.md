@@ -7,10 +7,10 @@ Este projeto é um sistema de login local com interface gráfica em Python, que 
 - Senhas protegidas por hash e salt
 - Interface moderna com Tkinter
 - Calculadora com histórico salvo em arquivo `.txt`
-- Executáveis prontos para Windows (`main.exe` e `calc.exe`)
+- Executáveis prontos para Windows (`Aplicativo Principal.exe` e `calc.exe`)
 
 ## Como usar
-1. Execute `main.exe` para abrir a tela de login/cadastro.
+1. Execute `Aplicativo Principal.exe` para abrir a tela de login/cadastro.
 2. Após login, a calculadora será aberta automaticamente.
 3. O histórico de cálculos é salvo em `historico_calculos.txt`.
 
