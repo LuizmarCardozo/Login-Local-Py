@@ -22,10 +22,6 @@ Este projeto é um sistema de login local com interface gráfica em Python, que 
 ## Estrutura dos arquivos
 - `main.py` — Tela de login/cadastro
 - `calc.py` — Calculadora com histórico
-- `main.exe` — Executável do login
-- `calc.exe` — Executável da calculadora
-- `Logo.ico` — Ícone do programa
-- `calc.png` — Imagem do cabeçalho
 - `usuarios.json` — Banco de dados local de usuários
 - `historico_calculos.txt` — Histórico dos cálculos
 
